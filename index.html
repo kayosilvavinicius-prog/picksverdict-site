@@ -5,8 +5,8 @@
   highlight blocks) per Kayo's request. Hard lines: own logo (no vendor logo/name-as-logo), never "official",
   own review text (nothing copy-pasted), independent-review line in the first screen.
   Rules kept: domain without product name (JV rule 3); CTAs only to /go/ (Commercial) and /go/bundle/ (Bundle),
-  never raw affiliate or OTO links (JV rule 6); AI-assistance disclosed (JV rule 12); FTC: plain line in the top
-  bar + "Paid link" next to every button + full block in footer. No countdown, no auto-redirect, no cookies,
+  never raw affiliate or OTO links (JV rule 6); AI-assistance disclosed (JV rule 12); FTC: plain line under the
+  H1 + "Paid link" next to every button + full block in footer. No countdown, no auto-redirect, no cookies,
   no analytics, no income claims. Google Ads sitelink anchors: #what-it-is #pricing #dates #pros-cons (do not rename).
   PRICE TO WATCH: Bundle $197 -> $227 (search "BUNDLE_PRICE").
 -->
@@ -45,8 +45,8 @@ a{color:inherit}
 .wrap{width:min(100% - 2rem,var(--max));margin-inline:auto}
 .narrow{max-width:46rem}
 /* top bars */
-.bar1{background:var(--coral);color:var(--ink);text-align:center;font-size:.86rem;line-height:1.45;padding:.6rem 1rem}
-.bar1 a{font-weight:600}
+.hero .disc{font-size:.78rem;line-height:1.4;color:#7a6b63;margin:-.3rem auto .9rem}
+.hero .disc a{color:#7a6b63}
 .bar2{background:var(--ink);color:var(--paper);text-align:center;font-weight:600;font-size:.92rem;padding:.6rem 1rem}
 .bar2 b{color:var(--coral)}
 /* nav card */
@@ -73,7 +73,7 @@ h1{font-size:clamp(2.1rem,7.6vw,3.7rem);margin:1.1rem auto .8rem;max-width:15ch}
 .cta:hover,.cta:focus-visible{transform:translateY(2px);box-shadow:0 3px 0 var(--ink);outline:none}
 .cta.alt{background:#fff}
 .cta.block{display:block;text-align:center}
-.paid{display:block;font-size:.76rem;color:var(--muted);margin-top:.55rem}
+.paid{display:block;font-size:.72rem;color:#8a7b72;margin-top:.5rem}
 .monoline{font:500 .78rem/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin:1rem 0 0}
 @media(max-width:520px){.hero .cta{display:block}}
 /* stat tiles */
@@ -148,7 +148,6 @@ footer nav a{margin-right:1rem}
 </style>
 </head>
 <body>
-<div class="bar1" role="note"><b>Independent review, not the EverPitch website.</b> We earn a commission if you buy through our links, at no extra cost to you. <a href="#disclosure">Details</a></div>
 <div class="bar2">Launch price ends <b>Sat, Nov 21 · 11:59 PM ET</b></div>
 
 <header class="wrap"><div class="navcard">
@@ -162,6 +161,7 @@ footer nav a{margin-right:1rem}
   <span class="pill">Independent review · <em>Nov 16, 2026</em></span>
   <h1>EverPitch Review: Is It <span class="boxed">Worth $37?</span></h1>
   <p class="lead">Short answer: yes, if you want a webinar that builds and runs itself.</p>
+  <p class="disc" role="note">Independent review · not the EverPitch site · we may earn a commission. <a href="#disclosure">Details</a></p>
   <p class="sub">You hand EverPitch a topic, a PDF, a link or an old recording. It writes the script, designs the slides, adds an AI voice and plays the webinar on a schedule. Skip it if you need a real live event with your own face and voice.</p>
   <a class="cta" id="hero-cta" href="/go/" rel="sponsored nofollow noopener">See EverPitch pricing →</a>
   <span class="paid">Paid link · opens EverPitch's sales page via JVZoo</span>
