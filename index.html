@@ -1,230 +1,316 @@
 <!DOCTYPE html>
 <!--
-  Independent review presell — EverPitch — v1 — published 16/11/2026 (America/Sao_Paulo).
-  Domain picksverdict.com does not contain the product name (JV Doc rule 3).
-  CTAs go only to /go/ (Commercial) and /go/bundle/ (Bundle). Never put a raw affiliate
-  link or any OTO/upsell link on this page (JV Doc rule 6 and "no raw affiliate links").
-  Affiliate-link targets live in go/index.html and go/bundle/index.html.
-  FTC affiliate disclosure: one plain line right under the headline, microcopy next to every CTA, full text in the footer
-  and on /contact.html. AI assistance is disclosed in the byline (JV Doc rule 12). v2 senior review 16/11/2026.
-  No countdown, no auto-redirect on this page, no official logos/colors/copy, no cookies or analytics.
+  PicksVerdict — EverPitch independent review / bridge page — v3 (16/11/2026, America/Sao_Paulo).
+  Design language modeled on the vendor's sales page (colors, Poppins + IBM Plex Mono, outlined cards, pills,
+  highlight blocks) per Kayo's request. Hard lines: own logo (no vendor logo/name-as-logo), never "official",
+  own review text (nothing copy-pasted), independent-review line in the first screen.
+  Rules kept: domain without product name (JV rule 3); CTAs only to /go/ (Commercial) and /go/bundle/ (Bundle),
+  never raw affiliate or OTO links (JV rule 6); AI-assistance disclosed (JV rule 12); FTC: plain line in the top
+  bar + "Paid link" next to every button + full block in footer. No countdown, no auto-redirect, no cookies,
+  no analytics, no income claims. Google Ads sitelink anchors: #what-it-is #pricing #dates #pros-cons (do not rename).
+  PRICE TO WATCH: Bundle $197 -> $227 (search "BUNDLE_PRICE").
 -->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EverPitch Review: An Independent Overview (Affiliate Page)</title>
-  <meta name="description" content="Independent affiliate overview of EverPitch, an AI webinar tool: what it does, who it suits, pricing, launch dates, pros and cons. Not the official website.">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://picksverdict.com/">
-  <meta name="theme-color" content="#f6f4ef">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%239a4d0f%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-family=%22sans-serif%22%3EPV%3C/text%3E%3C/svg%3E">
-  <style>
-    :root{--bg:#f6f4ef;--ink:#1c2430;--muted:#4a5564;--card:#fff;--line:#d7d2c8;--accent:#9a4d0f;--accent-ink:#fffaf4;--warn-bg:#fff4d6;--warn-ink:#5a3e00;--max:44rem}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Georgia,"Times New Roman",Times,serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:1.05rem}
-    header,main,footer{width:min(100% - 2rem,var(--max));margin-inline:auto}
-    .disclosure{background:var(--card);color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:.85rem 1rem;margin:1.25rem 0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.9rem}
-    .disclosure-line{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.85rem;color:var(--muted);margin:.25rem 0 1rem;padding-left:.6rem;border-left:3px solid var(--line)}
-    .disclosure-line a{color:var(--muted)}
-    .glance{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.9rem;margin:.75rem 0 0;padding:0;list-style:none}
-    .glance li{margin:0}
-    .plan h3{margin-top:0}.plan .price{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:700;font-size:1.15rem;margin:.2rem 0 .5rem}
-    .plan .cta{display:block;text-align:center;margin-top:.75rem}
-    @media(max-width:520px){.cta-wrap .cta{display:block}}
-    .kicker{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-top:1.25rem}
-    h1,h2,h3{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.25}
-    h1{font-size:1.8rem;margin:.3rem 0}
-    h2{font-size:1.25rem;margin-top:2rem;border-top:1px solid var(--line);padding-top:1.25rem}
-    h3{font-size:1.05rem;margin:.2rem 0 .4rem}
-    .sub{color:var(--muted);margin:0 0 1rem;font-size:.95rem}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1rem 1.15rem;margin:1rem 0}
-    .grid{display:grid;gap:1rem}
-    @media(min-width:640px){.grid.two{grid-template-columns:1fr 1fr}}
-    ul{padding-left:1.2rem} li{margin:.3rem 0}
-    table{width:100%;border-collapse:collapse;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.92rem;background:var(--card)}
-    th,td{border:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}
-    th{background:#efebe3}
-    .table-wrap{overflow-x:auto}
-    .cta-wrap{text-align:center;margin:1.75rem 0}
-    .cta{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:650;padding:.9rem 1.4rem;border-radius:6px;max-width:100%}
-    .cta:focus,.cta:hover{outline:2px solid var(--ink);outline-offset:3px}
-    .cta-note{font-size:.88rem;color:var(--muted);margin-top:.5rem}
-    .verdict{border-left:4px solid var(--accent);padding-left:1rem}
-    details{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.6rem .9rem;margin:.6rem 0}
-    summary{cursor:pointer;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:600}
-    footer{padding:2rem 0 3rem;color:var(--muted);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.9rem}
-    footer a,main a{color:var(--ink)}
-    .small{font-size:.9rem;color:var(--muted)}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EverPitch Review 2026: Features, Pricing ($37), Pros &amp; Cons</title>
+<meta name="description" content="Independent EverPitch review: what the AI webinar tool does, who it fits, Commercial ($37 one-time) vs Bundle, pros and cons, launch dates and FAQ. Affiliate page, clearly disclosed.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://picksverdict.com/">
+<meta name="theme-color" content="#e8785a">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PicksVerdict">
+<meta property="og:title" content="EverPitch Review: Features, Pricing, Pros &amp; Cons">
+<meta property="og:description" content="Independent review of EverPitch, the AI webinar builder. Who it fits, which plan to pick, and what to check before you buy.">
+<meta property="og:url" content="https://picksverdict.com/">
+<link rel="preload" href="/fonts/poppins-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%231d1512%22/%3E%3Cpath d=%22M9 17l5 5 9-11%22 stroke=%22%23e8785a%22 stroke-width=%224%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://picksverdict.com/#org","name":"PicksVerdict","url":"https://picksverdict.com/"},
+ {"@type":"Article","headline":"EverPitch Review: Features, Pricing, Pros & Cons","about":{"@type":"SoftwareApplication","name":"EverPitch","applicationCategory":"BusinessApplication","operatingSystem":"Web"},"author":{"@id":"https://picksverdict.com/#org"},"publisher":{"@id":"https://picksverdict.com/#org"},"datePublished":"2026-11-16","dateModified":"2026-11-16","mainEntityOfPage":"https://picksverdict.com/"}
+]}
+</script>
+<style>
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibmplexmono-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/poppins-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/poppins-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/poppins-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}:root{--coral:#e8785a;--coral-d:#c64f32;--coral-l:#ffd8cb;--coral-xl:#fff0ea;--cream:#fbefe6;--paper:#fffaf6;--ink:#1d1512;--ink2:#2b2320;--muted:#66574f;--good:#1f7a4d;--bad:#c64f32;--sans:"Poppins","Segoe UI",system-ui,-apple-system,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;--max:68rem;--r:16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.6 var(--sans)}
+a{color:inherit}
+.wrap{width:min(100% - 2rem,var(--max));margin-inline:auto}
+.narrow{max-width:46rem}
+/* top bars */
+.bar1{background:var(--coral);color:var(--ink);text-align:center;font-size:.86rem;line-height:1.45;padding:.6rem 1rem}
+.bar1 a{font-weight:600}
+.bar2{background:var(--ink);color:var(--paper);text-align:center;font-weight:600;font-size:.92rem;padding:.6rem 1rem}
+.bar2 b{color:var(--coral)}
+/* nav card */
+.navcard{margin:1rem auto 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#fff;border:2px solid var(--ink);border-radius:18px;box-shadow:0 4px 0 var(--ink);padding:.6rem .6rem .6rem 1.1rem}
+.brand{font-weight:800;font-size:1.25rem;letter-spacing:-.03em;text-decoration:none;display:flex;align-items:center;gap:.4rem}
+.brand i{font-style:normal;display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:var(--ink);color:var(--coral);font-size:.9rem}
+.navcard nav{display:none;gap:1.3rem;font-size:.88rem}
+.navcard nav a{text-decoration:none}
+@media(min-width:820px){.navcard nav{display:flex}}
+.btn-dark{background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:.95rem;border-radius:12px;padding:.65rem 1rem;box-shadow:0 4px 0 var(--coral);white-space:nowrap}
+/* hero */
+.hero{text-align:center;padding:2.2rem 0 1rem}
+.pill{white-space:nowrap;display:inline-flex;align-items:center;gap:.5rem;background:var(--ink);color:var(--paper);font:500 .74rem/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:99px;padding:.45rem 1rem;box-shadow:0 3px 0 var(--coral)}
+.pill:before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--coral)}
+.pill em{font-style:normal;color:var(--coral)}
+h1,h2{font-weight:800;letter-spacing:-.045em;line-height:1.08;margin:0}
+h1{font-size:clamp(2.1rem,7.6vw,3.7rem);margin:1.1rem auto .8rem;max-width:15ch}
+.boxed{display:inline-block;border:2.5px solid var(--ink);border-radius:12px;box-shadow:0 4px 0 var(--ink);padding:0 .25em;background:#fff;line-height:1.1}
+.hl{background:var(--coral);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.lead{font-weight:600;font-size:clamp(1.1rem,3.6vw,1.4rem);line-height:1.35;margin:0 auto .8rem;max-width:34ch}
+.sub{color:var(--muted);font-size:1.02rem;max-width:40rem;margin:0 auto 1.2rem}
+.byline{font:500 .72rem/1.5 var(--mono);color:var(--muted);letter-spacing:.03em;margin:1rem auto 0;max-width:40rem}
+.cta{display:inline-block;background:var(--coral);color:var(--ink);font-weight:600;font-size:1.12rem;text-decoration:none;border:2.5px solid var(--ink);border-radius:14px;box-shadow:0 5px 0 var(--ink);padding:.85rem 1.6rem;transition:transform .08s,box-shadow .08s}
+.cta:hover,.cta:focus-visible{transform:translateY(2px);box-shadow:0 3px 0 var(--ink);outline:none}
+.cta.alt{background:#fff}
+.cta.block{display:block;text-align:center}
+.paid{display:block;font-size:.76rem;color:var(--muted);margin-top:.55rem}
+.monoline{font:500 .78rem/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);margin:1rem 0 0}
+@media(max-width:520px){.hero .cta{display:block}}
+/* stat tiles */
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.2rem;margin:2rem auto 0;max-width:56rem;text-align:left}
+@media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{display:flex;align-items:center;gap:.7rem;font-weight:600;font-size:.9rem;line-height:1.25}
+.stat b{flex:none;background:var(--ink);color:var(--coral);font-weight:800;font-size:1.25rem;border-radius:10px;box-shadow:0 4px 0 var(--coral-d);padding:.45rem .6rem;min-width:3.2rem;text-align:center}
+.statsrc{font:500 .7rem var(--mono);color:var(--muted);text-align:center;margin:.9rem 0 0}
+/* sections */
+section.band{padding:3.2rem 0}
+.band.cream{background:var(--cream)}
+.kick{display:flex;align-items:center;gap:.7rem;font:500 .76rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin:0 0 .9rem}
+.kick:before{content:"";width:2rem;height:1.5px;background:var(--ink)}
+h2{font-size:clamp(1.9rem,6.4vw,3.1rem);margin-bottom:1rem;scroll-margin-top:1rem}
+.intro{color:var(--muted);font-size:1.05rem;max-width:40rem;margin:0 0 1.6rem}
+.cards{display:grid;gap:1rem}
+@media(min-width:640px){.cards.c2{grid-template-columns:1fr 1fr}.cards.c4{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.cards.c4{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border:2px solid var(--ink);border-radius:var(--r);box-shadow:0 4px 0 var(--ink);padding:1rem 1.1rem}
+.card h3{font-weight:800;font-size:1.08rem;letter-spacing:-.02em;line-height:1.25;margin:.15rem 0 .35rem}
+.card p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.5}
+.num{font:500 .7rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--coral-d)}
+.card.head{padding:0;overflow:hidden}
+.card.head .cap{background:var(--coral);border-bottom:2px solid var(--ink);font:500 .76rem var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:.6rem 1.1rem}
+.card.head.dark .cap{background:var(--ink);color:var(--paper)}
+.card.head ul{margin:0;padding:.6rem 1.1rem 1rem}
+ul.tick,ul.cross{list-style:none}
+ul.tick li,ul.cross li{position:relative;padding-left:1.7rem;margin:.5rem 0;font-size:.95rem}
+ul.tick li:before,ul.cross li:before{position:absolute;left:0;top:.15rem;width:1.15rem;height:1.15rem;border-radius:5px;display:grid;place-items:center;font-size:.7rem;font-weight:800;border:1.5px solid var(--ink)}
+ul.tick li:before{content:"✓";background:var(--coral-l)}
+ul.cross li:before{content:"✕";background:#fff}
+.note{font-size:.86rem;color:var(--muted);margin:1rem 0 0}
+/* plans */
+.plan{display:flex;flex-direction:column;padding:1.3rem}
+.plan.pick{background:var(--coral-xl)}
+.tag{align-self:flex-start;font:500 .7rem var(--mono);letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:var(--paper);border-radius:99px;padding:.3rem .75rem;margin-bottom:.6rem}
+.tag.c{background:var(--coral);color:var(--ink);border:1.5px solid var(--ink)}
+.card .price{color:var(--ink);font-weight:800;font-size:2.6rem;letter-spacing:-.04em;line-height:1;margin:.3rem 0 .2rem}
+.card .price small{font-size:.9rem;font-weight:600;letter-spacing:0;color:var(--muted)}
+.plan ul{flex:1;padding:0;margin:.6rem 0 1.1rem}
+.tblwrap{overflow-x:auto;margin-top:1.6rem}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:.9rem;background:#fff;border:2px solid var(--ink);border-radius:var(--r);box-shadow:0 4px 0 var(--ink);overflow:hidden}
+.tbl th,.tbl td{padding:.65rem .8rem;text-align:left;vertical-align:top;border-bottom:1px solid #eadbd0}
+.tbl th{background:var(--ink);color:var(--paper);font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.tbl tr:last-child td{border-bottom:0}
+/* dates */
+.timeline{display:grid;gap:1rem}
+@media(min-width:760px){.timeline{grid-template-columns:repeat(3,1fr)}}
+/* faq */
+details{background:#fff;border:2px solid var(--ink);border-radius:14px;box-shadow:0 3px 0 var(--ink);padding:.85rem 1.1rem;margin:.75rem 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-weight:800;color:var(--coral-d)}
+details[open] summary:after{content:"–"}
+details p{margin:.6rem 0 .1rem;color:var(--muted);font-size:.95rem}
+/* final */
+.final{background:var(--ink);color:var(--paper);text-align:center;padding:3.4rem 0}
+.final h2{color:var(--paper)}
+.final p{color:#e9dcd3;max-width:38rem;margin:0 auto 1.4rem}
+.final .paid{color:#cbb9ae}
+.final .paid a{color:#ffd8cb}
+footer{background:var(--paper);padding:2rem 0 6rem;font-size:.84rem;color:var(--muted)}
+footer .disc{background:#fff;border:1.5px solid #cbb9ae;border-radius:12px;padding:.9rem 1.1rem;margin:0 0 1rem}
+footer nav a{margin-right:1rem}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--ink);color:var(--paper);padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;gap:.7rem;transform:translateY(110%);transition:transform .2s;z-index:9}
+.sticky.on{transform:none}
+.sticky p{margin:0;font-size:.74rem;line-height:1.3;color:#cbb9ae}
+.sticky p b{display:block;color:var(--paper);font-size:.9rem}
+.sticky a{background:var(--coral);color:var(--ink);font-weight:600;text-decoration:none;border-radius:10px;padding:.6rem .95rem;white-space:nowrap;font-size:.92rem}
+@media(min-width:900px){footer{padding-bottom:2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta,.sticky{transition:none}}
+</style>
 </head>
 <body>
-<header>
-  <p class="kicker">Independent overview · AI webinar software</p>
-  <h1>EverPitch review: an independent overview before you buy</h1>
-  <p class="sub">By Kayo Silva · Last updated November 16, 2026 · Written with AI assistance and checked against the vendor's public pages listed under "Sources".</p>
-  <p class="disclosure-line" role="note"><strong>Disclosure:</strong> independent review, not the official EverPitch site. If you buy through my links I may earn a commission, at no extra cost to you. <a href="#disclosure">Details</a></p>
-</header>
+<div class="bar1" role="note"><b>Independent review, not the EverPitch website.</b> We earn a commission if you buy through our links, at no extra cost to you. <a href="#disclosure">Details</a></div>
+<div class="bar2">Launch price ends <b>Sat, Nov 21 · 11:59 PM ET</b></div>
+
+<header class="wrap"><div class="navcard">
+  <a class="brand" href="/"><i aria-hidden="true">✓</i>PicksVerdict</a>
+  <nav aria-label="Sections"><a href="#what-it-is">What it is</a><a href="#pricing">Pricing</a><a href="#pros-cons">Pros &amp; cons</a><a href="#faq">FAQ</a></nav>
+  <a class="btn-dark" href="/go/" rel="sponsored nofollow noopener">See pricing →</a>
+</div></header>
 
 <main>
-  <section class="verdict">
-    <p><strong>Short version.</strong> EverPitch is a tool that builds a webinar for you (script, slides and an AI voice) from a topic, a document, a link or an old recording, and then runs it on a schedule. It makes the most sense for people who already know what they want to teach or sell but keep putting off the work of producing and presenting a webinar. If you need a live, on-camera event with your own face and voice, or you never use webinars, it is probably not for you.</p>
-    <ul class="glance">
-      <li><strong>Price:</strong> $37 one-time (Commercial)</li>
-      <li><strong>Guarantee:</strong> 30 days</li>
-      <li><strong>Launch closes:</strong> Nov 21, 11:59 PM ET</li>
-    </ul>
-  </section>
-
-  <div class="cta-wrap">
-    <a class="cta" href="/go/" rel="sponsored nofollow noopener">See EverPitch pricing on the official page</a>
-    <p class="cta-note">Affiliate link · opens the vendor's page through JVZoo</p>
+<section class="hero wrap">
+  <span class="pill">Independent review · <em>Nov 16, 2026</em></span>
+  <h1>EverPitch Review: Is It <span class="boxed">Worth $37?</span></h1>
+  <p class="lead">Short answer: yes, if you want a webinar that builds and runs itself.</p>
+  <p class="sub">You hand EverPitch a topic, a PDF, a link or an old recording. It writes the script, designs the slides, adds an AI voice and plays the webinar on a schedule. Skip it if you need a real live event with your own face and voice.</p>
+  <a class="cta" id="hero-cta" href="/go/" rel="sponsored nofollow noopener">See EverPitch pricing →</a>
+  <span class="paid">Paid link · opens EverPitch's sales page via JVZoo</span>
+  <p class="monoline">$37 one time · no monthly fee · 30-day guarantee</p>
+  <div class="stats">
+    <div class="stat"><b>$37</b>one-time for Commercial</div>
+    <div class="stat"><b>30</b>days to ask for a refund</div>
+    <div class="stat"><b>87</b>voiceover languages</div>
+    <div class="stat"><b>4</b>optional upsells to know about</div>
   </div>
-  <section>
-    <p class="small">Honest note: I have not used EverPitch on a real project yet. This page summarizes what the vendor publishes and what their public demo shows, and points out what to check before buying.</p>
+  <p class="statsrc">Figures as published by the vendor, checked Nov 16, 2026</p>
+  <p class="byline">By the PicksVerdict team · Drafted with AI assistance, fact-checked against the vendor's public pages</p>
+</section>
 
-  </section>
-
-  <section id="what-it-is">
-    <h2>What it is</h2>
-    <p>EverPitch is web software sold through JVZoo. You give it a starting point, and it produces a complete presentation:</p>
-    <ul>
-      <li><strong>Input:</strong> a one-line idea, a guided form, an uploaded PDF or document, a sales page link, or an existing recording such as a past Zoom call.</li>
-      <li><strong>Output:</strong> a written script, designed slides (the vendor lists 73 layouts in 11 styles) and an AI voiceover (30 voices, 87 languages, per the vendor).</li>
-      <li><strong>Editing:</strong> you change slides, styles or images by typing what you want in plain language.</li>
-      <li><strong>Running it:</strong> the webinar plays in a "live room" on a schedule, shown in each visitor's time zone, and an AI host answers viewer questions out loud using only the webinar's content.</li>
-      <li><strong>Around it:</strong> registration page templates, reminder and follow-up emails, a replay page, checkout through your own Stripe or PayPal, and a connection to your email tool.</li>
-    </ul>
-    <p>There is also an optional "simulated audience" feature. The vendor says it is always disclosed as simulated. If you use it, keep it that way: presenting simulated viewers as real people would mislead your audience.</p>
-  </section>
-
-  <section class="grid two" id="who">
-    <div class="card">
-      <h3>Who it is for</h3>
-      <ul>
-        <li>Coaches, consultants and course creators who want a webinar but avoid scripting, designing and presenting.</li>
-        <li>Small software or service businesses that explain the same thing to every prospect.</li>
-        <li>People with old recordings or PDFs they would like to turn into an evergreen presentation.</li>
-        <li>Agencies that build webinars for clients (that needs the Agency upgrade).</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Who should skip it</h3>
-      <ul>
-        <li>Anyone who wants a real live event with their own face and voice.</li>
-        <li>People without a clear topic or offer: the tool builds the webinar, but it does not create demand.</li>
-        <li>Audiences that react badly to AI voices or AI-hosted Q&amp;A.</li>
-        <li>Anyone expecting guaranteed sign-ups or sales. No software can promise that.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="grid two" id="pros-cons">
-    <div class="card">
-      <h3>Pros</h3>
-      <ul>
-        <li>One-time price for the main plan during the launch, with monthly credits and no monthly fee on Commercial (per the vendor).</li>
-        <li>Starts from material you already have (PDF, link, recording), not only from a blank page.</li>
-        <li>Registration, reminders, replay and checkout are included, so fewer extra tools.</li>
-        <li>Many languages and voices, which helps if you sell outside English.</li>
-        <li>30-day money-back guarantee, according to the vendor.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Cons</h3>
-      <ul>
-        <li>Credit-based: Commercial includes 3,000 credits a month. Heavy use pushes you toward the Credit Boost or upgrades.</li>
-        <li>Several upsells after purchase (four upgrades, one of them yearly). Decide what you need before you check out.</li>
-        <li>New product launched in November 2026, so there is little long-term track record.</li>
-        <li>AI-generated scripts still need your review for accuracy and tone.</li>
-        <li>An automated webinar is not the same as being there live; some audiences notice.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <h2>Pricing during the launch</h2>
-    <p>Prices below come from the vendor's affiliate page and JV document (opened November 15, 2026). Always confirm on the checkout page before paying.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Option</th><th>What it includes (vendor's description)</th><th>Price</th></tr></thead>
-        <tbody>
-          <tr><td>Commercial (main plan)</td><td>All core features, 3,000 credits a month</td><td>$37 one-time</td></tr>
-          <tr><td>Credit Boost (checkout add-on)</td><td>Raises the account to 8,000 credits a month</td><td>$77 a year</td></tr>
-          <tr><td>Bundle</td><td>Commercial + DFY Webinars + Kit Vault + Agency, 8,000 credits a month</td><td>$197 early, then $227, one-time</td></tr>
-          <tr><td>Optional upgrades after Commercial</td><td>DFY Webinars ($67), Kit Vault ($47), Agency ($77), Ultra ($97 a year)</td><td>Optional</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <h3 style="margin-top:1.5rem">Commercial or Bundle: which one?</h3>
-    <div class="grid two">
-      <div class="card plan">
-        <h3>Commercial</h3>
-        <p class="price">$37 one-time</p>
-        <p class="small">Best if you want to test EverPitch on one or two webinars first. You can add upgrades later only if you need them.</p>
-        <a class="cta" href="/go/" rel="sponsored nofollow noopener">See Commercial</a>
-        <p class="cta-note">Affiliate link</p>
-      </div>
-      <div class="card plan">
-        <h3>Bundle</h3>
-        <p class="price">$197 early, then $227</p>
-        <p class="small">Only if you already know you will use the done-for-you webinars, the kits and the client license. It replaces the separate upgrades in one checkout.</p>
-        <a class="cta" href="/go/bundle/" rel="sponsored nofollow noopener">See the Bundle</a>
-        <p class="cta-note">Affiliate link</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="dates">
-    <h2>Launch dates</h2>
-    <ul>
-      <li>Second launch webinar: Monday, November 16, 2026, 10:00 AM Eastern.</li>
-      <li>Public sales page opens: Monday, November 16, 2026, 11:00 AM Eastern.</li>
-      <li>Launch closes: Saturday, November 21, 2026, 11:59 PM Eastern.</li>
-    </ul>
-    <p class="small">These are the dates the vendor publishes. The Bundle's early price changes during the launch; the vendor does not publish the exact moment, so check the price on the official page.</p>
-  </section>
-
-  <div class="cta-wrap">
-    <a class="cta" href="/go/" rel="sponsored nofollow noopener">See EverPitch on the official page</a>
-    <p class="cta-note">You will leave this site and go to the vendor's page through JVZoo. This button is my affiliate link.</p>
-    <p class="small">Want everything in one checkout? <a href="/go/bundle/" rel="sponsored nofollow noopener">See the Bundle option</a> (also an affiliate link).</p>
+<section class="band cream" id="what-it-is"><div class="wrap">
+  <p class="kick">What it is</p>
+  <h2>One input in, <span class="hl">a full webinar out.</span></h2>
+  <p class="intro">EverPitch is web software sold through JVZoo. Its job is the part most people never finish: turning what you know into a presentation that plays on its own. Here's how it works, in our words:</p>
+  <div class="cards c4">
+    <div class="card"><span class="num">1 · You bring</span><h3>Whatever you have</h3><p>A one-line idea, a guided form, a PDF, a sales page link or a past Zoom call.</p></div>
+    <div class="card"><span class="num">2 · It writes</span><h3>The script</h3><p>A spoken-style talk with your offer worked in. You still need to read it and fix the tone.</p></div>
+    <div class="card"><span class="num">3 · It designs</span><h3>Slides + AI voice</h3><p>73 layouts in 11 styles and 30 voices in 87 languages, per the vendor. Edit by typing what you want.</p></div>
+    <div class="card"><span class="num">4 · It runs</span><h3>On a schedule</h3><p>Plays in each viewer's time zone. An AI host answers questions using only the webinar's content.</p></div>
   </div>
+  <p class="note">Also in the box: registration templates, reminder and follow-up emails, a replay page, Stripe or PayPal checkout and an email-tool connection. The optional "simulated audience" is labeled as simulated, per the vendor; keep it that way.</p>
+</div></section>
 
-  <section id="faq">
-    <h2>Questions worth asking before you buy</h2>
-    <details><summary>Do I need to appear on camera or speak?</summary><p>No. The voice is AI-generated and the slides are designed for you. Camera features (host clips, avatar Q&amp;A, voice cloning with consent) are part of the yearly Ultra upgrade, not the main plan.</p></details>
-    <details><summary>Is it a monthly subscription?</summary><p>Commercial is a one-time payment during the launch, with credits that refresh each month. Ultra, Credit Boost and the MegaBundle options are yearly.</p></details>
-    <details><summary>Will it bring me sign-ups or sales?</summary><p>It cannot promise that, and neither can I. Results depend on your offer, your audience and how you get people to register.</p></details>
-    <details><summary>Can I get a refund?</summary><p>The vendor states a 30-day money-back guarantee. Read the terms on the checkout page.</p></details>
-    <details><summary>Is this page connected to the vendor?</summary><p>No. It is an independent overview. I am an affiliate, so I may earn a commission if you buy through my link.</p></details>
-  </section>
-
-  <div class="cta-wrap">
-    <a class="cta" href="/go/" rel="sponsored nofollow noopener">Check EverPitch pricing and details</a>
-    <p class="cta-note">Affiliate link. Opens the vendor's page through JVZoo.</p>
+<section class="band" id="who"><div class="wrap">
+  <p class="kick">Who it's for</p>
+  <h2>Great fit for some. <span class="hl">A miss for others.</span></h2>
+  <div class="cards c2" style="margin-top:1.4rem">
+    <div class="card head"><div class="cap">Buy it if you…</div><ul class="tick">
+      <li>Coach, consult or sell courses and keep putting off the webinar.</li>
+      <li>Explain the same thing to every prospect and want it on autopilot.</li>
+      <li>Have old recordings or PDFs sitting unused.</li>
+      <li>Build webinars for clients (needs the Agency upgrade).</li>
+    </ul></div>
+    <div class="card head dark"><div class="cap">Skip it if you…</div><ul class="cross">
+      <li>Want a real live event with your own face and voice.</li>
+      <li>Have no clear topic or offer yet; it builds webinars, not demand.</li>
+      <li>Sell to people who dislike AI voices.</li>
+      <li>Expect guaranteed sign-ups or sales. No tool can promise that.</li>
+    </ul></div>
   </div>
+</div></section>
 
-  <section id="sources">
-    <h2>Sources</h2>
-    <ul class="small">
-      <li>EverPitch affiliate page, everpitch.co/jv, opened November 15, 2026.</li>
-      <li>EverPitch JV document (affiliate terms as of 10/8/26), opened November 15, 2026.</li>
-    </ul>
-  </section>
+<section class="band cream" id="pricing"><div class="wrap">
+  <p class="kick">Pricing</p>
+  <h2>Commercial or Bundle? <span class="hl">Start small.</span></h2>
+  <p class="intro">Both are one-time payments during the launch. Our take: Commercial covers what most people need. Go Bundle only if you already know you'll use the done-for-you webinars and the client license.</p>
+  <div class="cards c2">
+    <div class="card plan pick">
+      <span class="tag">Our pick for most people</span>
+      <h3>Commercial</h3>
+      <p class="price">$37 <small>one time</small></p>
+      <ul class="tick"><li>All core features</li><li>3,000 credits a month, no monthly fee</li><li>Add upgrades later, only if you need them</li></ul>
+      <a class="cta block" href="/go/" rel="sponsored nofollow noopener">Get Commercial →</a>
+      <span class="paid" style="text-align:center">Paid link</span>
+    </div>
+    <div class="card plan">
+      <span class="tag c">Everything in one checkout</span>
+      <h3>Bundle</h3>
+      <!-- BUNDLE_PRICE -->
+      <p class="price">$197 <small>one time · rises to $227</small></p>
+      <ul class="tick"><li>Commercial + DFY Webinars + Kit Vault + Agency</li><li>8,000 credits a month</li><li>Costs less than adding those upgrades one by one</li></ul>
+      <a class="cta alt block" href="/go/bundle/" rel="sponsored nofollow noopener">See the Bundle →</a>
+      <span class="paid" style="text-align:center">Paid link</span>
+    </div>
+  </div>
+  <div class="tblwrap"><table class="tbl">
+    <thead><tr><th>Option</th><th>What you get (vendor's description)</th><th>Price</th></tr></thead>
+    <tbody>
+      <tr><td>Commercial</td><td>Core features, 3,000 credits/month</td><td>$37 one-time</td></tr>
+      <tr><td>Credit Boost (checkout add-on)</td><td>Raises the account to 8,000 credits/month</td><td>$77/year</td></tr>
+      <!-- BUNDLE_PRICE -->
+      <tr><td>Bundle</td><td>Commercial + DFY Webinars + Kit Vault + Agency</td><td>$197 early, then $227</td></tr>
+      <tr><td>Optional upgrades</td><td>DFY Webinars $67 · Kit Vault $47 · Agency $77 · Ultra $97/year</td><td>Optional</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">From the vendor's sales and affiliate pages, checked Nov 16, 2026. Always confirm on the checkout page.</p>
+</div></section>
 
-  <section id="privacy">
-    <h2>Privacy</h2>
-    <p class="small">This page does not use cookies, analytics or forms, and it does not collect personal data. When you click a button, you go to JVZoo and the vendor's website, which have their own privacy policies. The affiliate link tells JVZoo that you came from this page so that a commission can be credited if you buy. Questions: <a href="mailto:dasilvakayovinicius@gmail.com">dasilvakayovinicius@gmail.com</a>. See also the <a href="/privacy.html">privacy page</a> and <a href="/contact.html">contact &amp; disclosures</a>.</p>
-  </section>
+<section class="band" id="pros-cons"><div class="wrap">
+  <p class="kick">Pros and cons</p>
+  <h2>The good, <span class="hl">and the catch.</span></h2>
+  <div class="cards c2" style="margin-top:1.4rem">
+    <div class="card head"><div class="cap">Pros</div><ul class="tick">
+      <li>One-time price on the main plan, with monthly credits.</li>
+      <li>Starts from material you already have, not a blank page.</li>
+      <li>Registration, reminders, replay and checkout built in: fewer tools to pay for.</li>
+      <li>87 languages and 30 voices, handy outside English.</li>
+      <li>30-day money-back guarantee (per the vendor).</li>
+    </ul></div>
+    <div class="card head dark"><div class="cap">Cons</div><ul class="cross">
+      <li>Credit-based: heavy use pushes you toward Credit Boost or upgrades.</li>
+      <li>Four upsells after checkout. Decide what you need before you buy.</li>
+      <li>Brand-new (Nov 2026), so little long-term track record.</li>
+      <li>AI scripts still need your eye for accuracy and tone.</li>
+      <li>An automated webinar isn't the same as being there live.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section class="band cream" id="dates"><div class="wrap">
+  <p class="kick">Launch dates</p>
+  <h2>When the <span class="hl">launch price ends.</span></h2>
+  <div class="timeline" style="margin-top:1.4rem">
+    <div class="card"><span class="num">Mon, Nov 16 · 11:00 AM ET</span><h3>Cart opens</h3><p>Commercial at $37 one-time.</p></div>
+    <div class="card"><span class="num">During the launch</span><h3>Bundle goes up</h3><p>From $197 to $227. The vendor doesn't publish the exact time.</p></div>
+    <div class="card"><span class="num">Sat, Nov 21 · 11:59 PM ET</span><h3>Launch closes</h3><p>After this, launch pricing ends.</p></div>
+  </div>
+  <p class="note">Dates as published by the vendor.</p>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap narrow">
+  <p class="kick">FAQ</p>
+  <h2>Before you <span class="hl">buy.</span></h2>
+  <details><summary>Do I need to be on camera or speak?</summary><p>No. The voice is AI-generated and the slides are designed for you. Camera features (host clips, avatar Q&amp;A, voice cloning with consent) are in the yearly Ultra upgrade, not the main plan.</p></details>
+  <details><summary>Is it a monthly subscription?</summary><p>Commercial is a one-time payment during the launch, with credits that refresh monthly. Ultra and Credit Boost are yearly.</p></details>
+  <details><summary>Which plan should I choose?</summary><p>Commercial if you want to try it on one or two webinars. The Bundle only if you'll use the done-for-you webinars, kits and client license; it costs less than buying those upgrades separately.</p></details>
+  <details><summary>Will it bring me sign-ups or sales?</summary><p>It can't promise that, and neither can we. Results depend on your offer, your audience and how you drive registrations.</p></details>
+  <details><summary>Can I get a refund?</summary><p>The vendor states a 30-day money-back guarantee. Check the terms on the checkout page.</p></details>
+  <details><summary>How did you review it?</summary><p>We went through the vendor's sales page, public demo and affiliate materials and compared the plans and upgrades. We haven't run a long-term project with it yet, so we stick to what's documented and flag what to check.</p></details>
+  <details><summary>Is this site connected to EverPitch?</summary><p>No. PicksVerdict is independent. We're an affiliate, so we may earn a commission if you buy through our links.</p></details>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <p class="kick" style="justify-content:center;color:#cbb9ae">Bottom line</p>
+  <h2>If making webinars is the bottleneck, <span class="hl" style="color:var(--ink)">try it for $37.</span></h2>
+  <p>One payment, 30-day guarantee, and you can add upgrades later only if you outgrow it.</p>
+  <a class="cta" id="final-cta" href="/go/" rel="sponsored nofollow noopener">Check today's price →</a>
+  <span class="paid">Paid link · or <a href="/go/bundle/" rel="sponsored nofollow noopener">see the Bundle</a></span>
+</div></section>
 </main>
 
-<footer>
-  <div class="disclosure" role="note" id="disclosure">
-    <strong>Affiliate disclosure:</strong> this is an independent page, not the official EverPitch website, and it is not run by, affiliated with or endorsed by Todd Gross, EverPitch or JVZoo. Buttons on this page are affiliate links: if you buy through them, I may earn a commission from JVZoo at no extra cost to you, and it does not change the price you pay. Parts of this page were written with AI assistance and checked by me against the vendor's public pages. EverPitch is a product name of its owner and is used here only to describe the product.
-  </div>
-  <p>Independent page by Kayo Silva · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact &amp; disclosures</a> · <a href="mailto:dasilvakayovinicius@gmail.com">dasilvakayovinicius@gmail.com</a></p>
-  <p>No automatic redirect, no countdown timer, and no official logos, screenshots or sales copy from the vendor are used on this page.</p>
-</footer>
+<footer><div class="wrap">
+  <div class="disc" id="disclosure" role="note"><b>Affiliate &amp; AI disclosure.</b> PicksVerdict is an independent review site. It is not the EverPitch website and is not run by, affiliated with or endorsed by Todd Gross, EverPitch or JVZoo. Buttons marked "Paid link" are affiliate links: if you buy through them we may earn a commission from JVZoo, at no extra cost to you, and it doesn't change the price you pay. This page was drafted with AI assistance and checked against the vendor's public pages. EverPitch is a trademark of its owner, used here only to identify the product. Sources: EverPitch sales page, affiliate page and JV document, opened Nov 15–16, 2026.</div>
+  <nav><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact &amp; disclosures</a></nav>
+  <p>© 2026 PicksVerdict · No cookies, no tracking, no countdown timers.</p>
+</div></footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <p><b>EverPitch · $37 one time</b>Paid link · 30-day guarantee</p>
+  <a href="/go/" rel="sponsored nofollow noopener" tabindex="-1">See pricing →</a>
+</div>
+<script>
+(function(){if(!('IntersectionObserver'in window))return;var s=document.getElementById('sticky'),a=false,b=false;function u(){s.classList.toggle('on',a&&!b)}
+new IntersectionObserver(function(e){a=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;u()}).observe(document.getElementById('hero-cta'));
+new IntersectionObserver(function(e){b=e[0].isIntersecting;u()}).observe(document.querySelector('.final'))})();
+</script>
 </body>
 </html>

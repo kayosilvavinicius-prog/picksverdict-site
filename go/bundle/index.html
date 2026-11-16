@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <!--
-  Bundle (JVZoo 461141) redirect.
-  To change the destination, update BOTH:
-    1) the meta refresh url
-    2) the JavaScript TARGET constant
-  Do not put the raw affiliate link on the review page — only here.
+  Bundle redirect (PicksVerdict). To change the destination, update BOTH the meta refresh url and TARGET.
+  No visible interstitial: blank page in the site colors, JS replace first, meta refresh as fallback,
+  a link appears only if nothing happened after 2.5 s. Never put this link in the ad itself.
 -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="refresh" content="0; url=https://jvz7.com/c/3658755/461141/">
-  <title>Continuing to the official Bundle page…</title>
-  <style>
-    body{margin:2rem auto;max-width:36rem;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#1c2430;background:#f6f4ef;line-height:1.5;padding:0 1rem}
-    a{color:#1c2430}
-  </style>
+  <meta name="referrer" content="no-referrer-when-downgrade">
   <script>
     const TARGET = "https://jvz7.com/c/3658755/461141/";
     location.replace(TARGET);
   </script>
+  <meta http-equiv="refresh" content="0; url=https://jvz7.com/c/3658755/461141/">
+  <title>EverPitch</title>
+  <style>html,body{margin:0;height:100%;background:#fffaf6}p{display:none;font:16px system-ui,sans-serif;color:#1d1512;text-align:center;padding-top:40vh}p.on{display:block}a{color:#c64f32}</style>
 </head>
 <body>
-  <p>Continuing to the official Bundle page… If you are not redirected, <a href="https://jvz7.com/c/3658755/461141/">open it here</a>.</p>
+  <p id="f"><a href="https://jvz7.com/c/3658755/461141/" rel="sponsored nofollow">Continue to EverPitch →</a></p>
+  <script>setTimeout(function(){document.getElementById('f').className='on'},2500)</script>
+  <noscript><p class="on"><a href="https://jvz7.com/c/3658755/461141/" rel="sponsored nofollow">Continue to EverPitch →</a></p></noscript>
 </body>
 </html>
