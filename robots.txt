@@ -3,3 +3,4 @@ Allow: /
 Disallow: /go/
 
 # /go/ and /go/bundle/ are noindex affiliate redirects.
+Sitemap: https://picksverdict.com/sitemap.xml
